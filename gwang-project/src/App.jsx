@@ -1,13 +1,14 @@
-import { useState } from "react";
-import "./App.css";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Login } from "./pages/Login";
+import "./App.css";
+import Main from "./Pages/Main.jsx";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={"/login"} element={<Login />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </BrowserRouter>
   );
