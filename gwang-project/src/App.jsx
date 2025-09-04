@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/kakaoRedirect" element={<KakaoRedirect />} />
+        <Route path="/login/oauth2/code/kakao" element={<KakaoRedirect />} />
       </Routes>
     </BrowserRouter>
   );
